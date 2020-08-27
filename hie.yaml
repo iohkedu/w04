@@ -2,7 +2,7 @@ cradle:
   cabal:
     - path: "./src"
       component: "lib:w04"
-    - path: "./doctest/doctest.hs"
+    - path: "./doctest/doctests.hs"
       component: "test:w04-doctests"
     - path: "./benchmark/w0402.hs"
       component: "bench:w0402"
