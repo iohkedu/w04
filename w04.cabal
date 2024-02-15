@@ -1,6 +1,6 @@
 cabal-version:       3.4
 name:                w04
-version:             0.1
+version:             0.1.0.0
 build-type:          Custom
 extra-source-files:  README.md
 
@@ -14,7 +14,7 @@ library
   hs-source-dirs:       src
   Exposed-Modules:      W0401
                       , W0403
-  build-depends:        base ^>= 4.16.4.0
+  build-depends:        base ^>= 4.18.1
                       , base16-bytestring
                       , base58-bytestring
                       , bytestring
@@ -30,7 +30,7 @@ benchmark w0402
   type:                exitcode-stdio-1.0
   hs-source-dirs:      benchmark
   main-is:             w0402.hs
-  build-depends:       base ^>= 4.16.4.0
+  build-depends:       base ^>= 4.18.1
                      , criterion
                      , w04
   ghc-options:         -Wall -O3
@@ -39,7 +39,7 @@ benchmark w0402
 executable w040301
   hs-source-dirs:      app
   main-is:             w040301.hs
-  build-depends:       base ^>= 4.16.4.0
+  build-depends:       base ^>= 4.18.1
                      , w04
   ghc-options:         -Wall -O3
   default-language:    Haskell2010
@@ -47,7 +47,7 @@ executable w040301
 executable w040302
   hs-source-dirs:      app
   main-is:             w040302.hs
-  build-depends:       base ^>= 4.16.4.0
+  build-depends:       base ^>= 4.18.1
                      , w04
   ghc-options:         -Wall -O3
   default-language:    Haskell2010
@@ -55,7 +55,7 @@ executable w040302
 executable w040303
   hs-source-dirs:      app
   main-is:             w040303.hs
-  build-depends:       base ^>= 4.16.4.0
+  build-depends:       base ^>= 4.18.1
                      , w04
   ghc-options:         -Wall -O3
   default-language:    Haskell2010
@@ -64,7 +64,7 @@ test-suite w04-doctests
   type:                 exitcode-stdio-1.0
   main-is:              doctests.hs
   build-depends:
-                        base ^>= 4.16.4.0
+                        base ^>= 4.18.1
                       , doctest
                       , template-haskell
   ghc-options:      -Wall -threaded
